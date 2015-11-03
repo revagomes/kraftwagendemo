@@ -1,0 +1,45 @@
+name = kraftwagendemo
+description = Install site for kraftwagendemo
+core = 7.x
+
+; Core
+
+dependencies[] = menu
+dependencies[] = block
+dependencies[] = dblog
+dependencies[] = field_sql_storage
+
+; Kraftwagen
+
+dependencies[] = kw_manifests
+
+; Utilities and APIs
+
+dependencies[] = token
+dependencies[] = transliteration
+dependencies[] = pathauto
+dependencies[] = libraries
+dependencies[] = entity
+dependencies[] = ctools
+
+; Views
+
+dependencies[] = views
+
+; Administration
+
+dependencies[] = adminimal_admin_menu
+
+; Configuration management
+
+dependencies[] = features
+dependencies[] = configuration
+
+; Development
+
+env_dependencies[development][] = field_ui
+env_dependencies[development][] = views_ui
+env_dependencies[development][] = configuration_ui
+env_dependencies[development][] = devel
+
+files[] = kraftwagendemo.profile
