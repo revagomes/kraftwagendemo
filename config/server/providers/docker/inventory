@@ -1,0 +1,13 @@
+[solr]
+kraftwagendemo_solr ansible_ssh_host=localhost ansible_ssh_port=2223
+
+[database]
+kraftwagendemo ansible_ssh_host=localhost ansible_ssh_port=2222
+
+[drupal]
+kraftwagendemo ansible_ssh_host=localhost ansible_ssh_port=2222
+
+[docker:children]
+solr
+database
+drupal
