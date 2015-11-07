@@ -2,44 +2,137 @@ name = kraftwagendemo
 description = Install site for kraftwagendemo
 core = 7.x
 
+; =====================
 ; Core
+; =====================
 
 dependencies[] = menu
 dependencies[] = block
 dependencies[] = dblog
 dependencies[] = field_sql_storage
 
+; =====================
 ; Kraftwagen
+; =====================
 
 dependencies[] = kw_manifests
+dependencies[] = kw_itemnames
 
+; =====================
 ; Utilities and APIs
+; =====================
 
+dependencies[] = ctools
 dependencies[] = token
-dependencies[] = transliteration
 dependencies[] = pathauto
 dependencies[] = libraries
 dependencies[] = entity
-dependencies[] = ctools
+dependencies[] = xautoload
+dependencies[] = jquery_update
+dependencies[] = prevent_js_alerts
 
+; =====================
 ; Views
+; =====================
 
 dependencies[] = views
 
+; =====================
 ; Administration
+; =====================
 
+dependencies[] = admin_menu
 dependencies[] = adminimal_admin_menu
+dependencies[] = module_filter
+dependencies[] = coffee
+dependencies[] = fpa
+dependencies[] = filter_perms
 
+; =====================
 ; Configuration management
+; =====================
 
 dependencies[] = features
+dependencies[] = diff
 dependencies[] = configuration
+dependencies[] = defaultconfig
+dependencies[] = strongarm
 
+
+; =====================
+; Security
+; =====================
+
+dependencies[] = seckit
+dependencies[] = password_policy
+dependencies[] = paranoia
+
+
+; =====================
+; Performance
+; =====================
+
+dependencies[] = imageapi_optimize
+dependencies[] = entitycache
+
+
+; =====================
+; SEO
+; =====================
+
+dependencies[] = menu_attributes
+dependencies[] = globalredirect
+dependencies[] = xmlsitemap
+dependencies[] = metatag
+; dependencies[] = metatag_facebook
+; dependencies[] = metatag_google_plus
+; dependencies[] = metatag_opengraph
+; dependencies[] = metatag_panels
+
+
+; =====================
+; Entities
+; =====================
+
+dependencies[] = eck
+dependencies[] = entityreference
+dependencies[] = inline_entity_form
+dependencies[] = field_group
+dependencies[] = better_formats
+
+
+; =====================
+; i18n
+; =====================
+
+dependencies[] = transliteration
+dependencies[] = l10n_update
+
+
+; =====================
+; Files
+; =====================
+
+dependencies[] = file_entity
+dependencies[] = media
+dependencies[] = media_vimeo
+dependencies[] = media_youtube
+dependencies[] = ckeditor
+
+
+; =====================
 ; Development
+; =====================
 
 env_dependencies[development][] = field_ui
 env_dependencies[development][] = views_ui
 env_dependencies[development][] = configuration_ui
 env_dependencies[development][] = devel
+env_dependencies[development][] = search_krumo
+env_dependencies[development][] = module_builder
+env_dependencies[development][] = drupal_ipsum
+env_dependencies[development][] = environment_indicator
+env_dependencies[development][] = stage_file_proxy
+env_dependencies[development][] = reroute_email
 
 files[] = kraftwagendemo.profile

@@ -2,6 +2,12 @@
 modules/contrib/*
 !modules/contrib/README.md
 
+# ignore modules in dev
+modules/dev/*
+
+# ignore libraries
+libraries/*
+
 # ignore modules in kraftwagen, but keep the README.md
 modules/kraftwagen/*
 !modules/kraftwagen/README.md
